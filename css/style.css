@@ -30,25 +30,22 @@ body{
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
-  background-image: url("pigeon-icon. jpg");
+  background-image: url("../images/pigeon-background.JPEG");
   background-color: #DDDDDD;
   height: 100%;
   background-repeat: no-repeat;
-  font-family: "Andika", "sans-serif" };
+  font-family: 'Andika', 'sans-serif'}
   
   /*Req 1*/
-}
 
 h1{
   color: #c12258;
-  font-size: 2em;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 2;
   text-align: center;
-  font-family: Andika; font-size: 24px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26.399999618530273px; } h3 { font-family: Andika; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15.399999618530273px; } p { font-family: Andika; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Andika; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Andika; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.571430206298828px, "sans-serif" };
-  line-height: 32px;
-  text-align: center;
-  /*Req 2*/
-}
+  font-family: 'Andika', 'sans-serif';
+  }
+
 
 p{
   padding-top: 15px;
@@ -57,41 +54,82 @@ p{
 a{
   font-size: 16px;
   color: #B21F50;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 
   
 }
 
-/*Req 5*/
+/*Req 5*/ 
 /*Add selector and rule here*/
 
-
+input:focus {
+border: 3px dashed #417243;
+}
 
 td{
-  
+ border-top: 2px solid black ;
+ padding: 10px;
+ text-align: center;
 }
 
 
 .colhead{
   color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #7e0825;
+  text-transform: uppercase;
 
 }
 
 .rowhead{
-
+  border-right: 2px solid black;
 }
 
 
 table{
     border: 5px solid #000000;
+    margin-left: auto;
+   margin-right: auto;
+   border-radius: 50px;
 }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+table tr:first-child th:first-child{
+  border-radius: 50px 0 0 0;
+}
+
+table tr:nth-child(10) th:first-child{
+  border-radius: 0 0 0 50px;
+}
+
+table tr:last-child td:last-child{
+  border-radius: 0 0 50px 0;
+}
+
+thead tr:first-child th:last-child{
+  border-radius: 0 50px 0 0 ; 
+
+}
+  
 
 /*Add selectors and rules here*/
 
+tr:nth-child(odd) {
+  background-color: transparent;
+}
 
+tr:nth-child(even) {
+  background-color:#D1D1D1;
+}
+
+tr:hover {
+background-color: rgba(126, 8, 37, .25);
+}
 
 footer{
   display: block;
@@ -100,5 +138,6 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  
+  position:fixed
+
 }

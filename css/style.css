@@ -34,7 +34,7 @@ body{
   background-color: #DDDDDD;
   height: 100%;
   background-repeat: no-repeat;
-  font-family: 'Andika', 'sans-serif';
+  font-family: 'Andika', sans-serif;
 }
   
   /*Req 1*/
@@ -44,7 +44,7 @@ h1{
   font-size: 32px;
   line-height: 2;
   text-align: center;
-  font-family: 'Andika', 'sans-serif';
+  font-family: 'Andika', sans-serif;
   }
 
 
@@ -141,5 +141,5 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  font-family: 'Andika', 'sans-serif';
+  font-family: 'Andika', sans-serif;
 }
